@@ -1,50 +1,139 @@
-# Welcome to your Expo app 👋
+# Dealzy – AI Sales Visit Logger
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Dealzy is a React Native (Expo) mobile app designed for sales teams to log customer visits, generate AI-powered meeting insights, and work seamlessly even without internet.
 
-## Get started
+The app supports offline storage and automatic sync with Firebase when the network becomes available.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## Features
 
-2. Start the app
+• Sales visit logging  
+• AI-generated meeting summaries  
+• Offline visit storage using AsyncStorage  
+• Automatic sync to Firebase when internet returns  
+• Manual retry sync for failed uploads  
+• Dark mode UI support  
+• Firebase Authentication for secure login  
+• Swipe-to-delete visits  
+• Filter visits (All / Synced / Pending)
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## Tech Stack
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+**Frontend**
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- React Native (Expo)
+- TypeScript
+- React Native Paper UI
 
-## Get a fresh project
+**Backend**
 
-When you're ready, run:
+- Firebase Authentication
+- Firebase Firestore
 
-```bash
-npm run reset-project
-```
+**AI Integration**
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+- OpenRouter API
+- LLaMA 3.1 AI Model
 
-## Learn more
+**Offline Support**
 
-To learn more about developing your project with Expo, look at the following resources:
+- AsyncStorage
+- Custom Sync Engine
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+---
 
-## Join the community
+## App Architecture
+Mobile App (React Native)
+↓
+Firebase Authentication
+↓
+Firestore Database
+↓
+Offline Storage (AsyncStorage)
+↓
+Auto Sync Engine
 
-Join our community of developers creating universal apps.
+---
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Screens
+
+- Login
+- Signup
+- Visit List Dashboard
+- Add Visit
+- Visit Details
+- Edit Visit
+- Insights
+- Profile
+
+---
+
+## Installation
+
+Clone the repository
+git clone https://github.com/yourusername/dealzy.git
+
+Navigate to the project folder
+
+cd dealzy
+
+Install dependencies
+
+npm install
+
+Start the Expo development server
+
+npx expo start
+
+Run the app on Android
+
+Press "a" in terminal or scan QR using Expo Go
+
+## Environment Variables
+
+Add your OpenRouter API key inside:
+
+AddVisit.tsx
+
+Example:
+
+const OPENROUTER_KEY = "your-api-key"
+
+---
+
+## Offline Sync System
+
+When the device is offline:
+
+1. Visits are saved in AsyncStorage
+2. Status is marked as "draft"
+3. When internet becomes available:
+4. Visits automatically sync to Firebase
+5. Status updates to "synced"
+
+Users can also manually retry sync.
+
+---
+
+## Future Improvements
+
+• Background auto-sync when internet reconnects  
+• Image attachments for visits  
+• Voice-to-text meeting notes  
+• Sales analytics dashboard  
+• Push notifications for follow-ups  
+
+---
+
+## Author
+
+Raj Vishvakarma
+
+---
+
+## License
+
+This project is created for internship assignment and educational purposes.
