@@ -77,6 +77,34 @@ Auto Sync Engine
 
 ---
 
+## App Screenshots
+
+<p align="center">
+  <img src="screenshots/welcome_screen.jpeg" width="45%" />
+  <img src="screenshots/loginScreen.jpeg" width="45%" />
+</p>
+
+<p align="center">
+  <img src="screenshots/signupScreen.jpeg" width="45%" />
+  <img src="screenshots/homeScreen.jpeg" width="45%" />
+</p>
+
+<p align="center">
+  <img src="screenshots/add_sales_visit_screen.jpeg" width="45%" />
+  <img src="screenshots/visitDetailsScreen.jpeg" width="45%" />
+</p>
+
+<p align="center">
+  <img src="screenshots/editVisit.jpeg" width="45%" />
+  <img src="screenshots/salesInsights.jpeg" width="45%" />
+</p>
+
+<p align="center">
+  <img src="screenshots/profileScreen.jpeg" width="45%" />
+  <img src="screenshots/dark_mode_on_screen.jpeg" width="45%" />
+</p>
+
+
 ## Installation
 
 Clone the repository
