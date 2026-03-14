@@ -171,3 +171,11 @@ Raj Vishvakarma
 ## License
 
 This project is created for internship assignment and educational purposes.
+
+## 📱 Download APK
+
+<p align="center">
+<a href="https://github.com/rajvishvakarma088-star/Dealzy/releases">
+<img src="https://img.shields.io/badge/Download-Dealzy%20APK-green?style=for-the-badge&logo=android"/>
+</a>
+</p>
