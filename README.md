@@ -1,5 +1,11 @@
 # Dealzy – AI Sales Visit Logger
 
+![React Native](https://img.shields.io/badge/React%20Native-Expo-blue)
+![Firebase](https://img.shields.io/badge/Firebase-Firestore-orange)
+![AI Powered](https://img.shields.io/badge/AI-OpenRouter-green)
+![Offline Support](https://img.shields.io/badge/Offline-AsyncStorage-purple)
+![License](https://img.shields.io/badge/License-Educational-lightgrey)
+
 Dealzy is a React Native (Expo) mobile app designed for sales teams to log customer visits, generate AI-powered meeting insights, and work seamlessly even without internet.
 
 The app supports offline storage and automatic sync with Firebase when the network becomes available.

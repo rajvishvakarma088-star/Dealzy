@@ -39,7 +39,7 @@ export default function AddVisit() {
   const [summary, setSummary] = useState("");
   const [loadingAI, setLoadingAI] = useState(false);
 
-  const OPENROUTER_KEY = "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";
+  const OPENROUTER_KEY = "YOUR_OPENROUTER_API_KEY";
 
   /* AI SUMMARY */
 
